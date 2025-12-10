@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Models\Ticket;
 use App\Http\Requests\Api\V1\StoreTicketRequest;
-use App\Http\Requests\Api\V1\updateTicketRequest;
+use App\Http\Requests\Api\V1\UpdateTicketRequest;
 use App\Http\Resources\V1\TicketResource;
 
 class TicketController extends Controller
@@ -38,7 +38,7 @@ class TicketController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(updateTicketRequest $request, Ticket $ticket)
+    public function update(UpdateTicketRequest $request, Ticket $ticket)
     {
         //
     }
